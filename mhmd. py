@@ -1,0 +1,13 @@
+def grade_calculator(scores):
+    avg = sum(scores) / len(scores)
+    if 90 <= avg <= 100:
+        grade = 'A'
+    elif 80 <= avg <= 89:
+        grade = 'B'
+    elif 70 <= avg <= 79:
+        grade = 'C'
+    elif 60 <= avg <= 69:
+        grade = 'D'
+    else:
+        grade = 'F'
+    return avg, grade
